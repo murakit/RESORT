@@ -52,7 +52,7 @@ body {
     width: 100%;
     color:white;
 }
-@media (max-width: 600px) {
+@media (max-width: 300px) {
     .brand-container {
         position: relative;
         left: 0;
