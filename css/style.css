@@ -52,7 +52,7 @@ body {
     width: 100%;
     color:white;
 }
-@media (max-width: 300px) {
+@media (max-width: 600px) {
     .brand-container {
         position: relative;
         left: 0;
@@ -67,4 +67,48 @@ body {
         left: 0.5rem; /* Adjust as needed for horizontal spacing */
         z-index: 2;   /* To ensure the toggler remains above other navbar elements */
     }
+}
+
+
+html#ecwid_html body#ecwid_body .ec-minicart {
+    display:none;
+   
+}
+
+
+html#ecwid_html body#ecwid_body .ec-minicart {
+    display:none;
+}
+   
+html#ecwid_html body#ecwid_body .ec-minicart {
+    display: none;
+}
+
+html#ecwid_html body#ecwid_body .ec-minicart {
+   position:absolute !important;
+   top:2;
+   right:10;
+
+}
+
+html#ecwid_html body#ecwid_body .ec-minicart__icon svg {
+    display: none !important;
+    background-color: transparent !important;
+    width: 50%;
+    height: 50%;
+    box-shadow: none;
+    content:"Bag";
+}
+
+html#ecwid_html body#ecwid_body div.ecwid-ProductBrowserPopup>div {
+    padding: 5px;
+    box-sizing: border-box;
+    border: 1px solid black !important;
+    border-radius: 0px !important;
+    position: relative;
+    margin: 0 auto;
+    background-image: url("bag.png") !important;
+    background-repeat: no-repeat !important;
+    display: inline-block;
+    background-position: bottom 50px left 100px !important;
 }
