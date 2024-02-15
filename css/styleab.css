@@ -157,6 +157,8 @@ a:hover {
     .responsive-text02 {
         font-size: 22px;  /* Set a minimum size for very small screens */
     }
+  
+    
 }
 
 
@@ -184,12 +186,14 @@ a:hover {
     }   
 }
 
-@media (min-width: 800px) {
+@media (min-width: 600px) {
     .footer-left {
         float: left;
         margin-left: -20px;
     }
 }
+
+  
 
 
 
