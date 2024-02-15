@@ -16,6 +16,28 @@ body {
     }
 }
 
+a {
+    color: black;
+    text-decoration: none; /* This ensures no underline by default */
+    transition: border-bottom 0.3s;
+}
+
+.nav-link {
+    text-decoration: none !important;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+    transition: border-bottom 0.3s;
+    line-height: 1.2; /* Adjust as needed */
+}
+
+a:hover {
+    border-bottom: 1px solid black;
+    padding-bottom: 0; /* Adjust as needed */
+}
+
 .navbar-nav.ml-auto {
     background-color: white;
     margin-left: auto !important;
@@ -92,7 +114,7 @@ html#ecwid_html body#ecwid_body .ec-minicart {
 }
 
 html#ecwid_html body#ecwid_body .ec-minicart__icon svg {
-    display: none !important;
+    display: none;
     background-color: transparent !important;
     width: 50%;
     height: 50%;
@@ -112,3 +134,41 @@ html#ecwid_html body#ecwid_body div.ecwid-ProductBrowserPopup>div {
     display: inline-block;
     background-position: bottom 50px left 100px !important;
 }
+
+#navbarNav {
+    margin-right:5%;
+}
+
+html#ecwid_html body#ecwid_body .ec-size.ec-size--s .ec-store .ec-cart-next {
+    display: none !important;
+}
+
+html#ecwid_html body#ecwid_body .ec-size.ec-size--s .ec-store.ec-store__cart-page .ec-cart-item__picture {
+    width: 115px;
+}
+
+html#ecwid_html body#ecwid_body .ec-size.ec-size--m .ec-store.ec-store__subscription-page .ec-cart__body, html#ecwid_html body#ecwid_body .ec-size.ec-size--m .ec-store.ec-store__cart-page .ec-cart__body, html#ecwid_html body#ecwid_body .ec-size.ec-size--m .ec-store.ec-store__account-page .ec-cart__body {
+    width: 38.3333333333%;
+}
+
+html#ecwid_html body#ecwid_body .ec-size.ec-size--s .ec-store .ec-cart__shopping {
+    display: none !important;
+
+}
+
+html#ecwid_html body#ecwid_body .ec-size.ec-size--s .ec-store .ec-cart__body .ec-page-title {
+    display: none !important;
+}
+
+html#ecwid_html body#ecwid_body .ec-minicart.ec-minicart--pill {
+    display: none !important;
+
+}
+
+    
+html#ecwid_html body#ecwid_body div.ecwid-overlay {
+    background-color: transparent !important;
+    opacity: 0.6;
+    filter: alpha(opacity=60);
+}
+

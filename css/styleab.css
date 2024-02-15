@@ -192,7 +192,7 @@ html#ecwid_html body#ecwid_body .ec-minicart {
 }
 
 html#ecwid_html body#ecwid_body .ec-minicart__icon svg {
-    display: none !important;
+    display: none ;
     background-color: transparent !important;
     width: 50%;
     height: 50%;
@@ -207,9 +207,69 @@ html#ecwid_html body#ecwid_body div.ecwid-ProductBrowserPopup>div {
     border-radius: 0px !important;
     position: relative;
     margin: 0 auto;
-    background-image: url("bag.png") !important;
-    background-repeat: no-repeat !important;
+    /*background-image: url("bag.png") !important;
+    background-repeat: no-repeat !important;*/
     display: inline-block;
     background-position: bottom 50px left 100px !important;
     right:0  !important;
 }
+
+#navbarNav {
+    margin-right:5%;
+}
+
+html#ecwid_html body#ecwid_body .ec-size.ec-size--s .ec-store .ec-cart-next {
+    display: none !important;
+}
+
+html#ecwid_html body#ecwid_body .ec-size.ec-size--s .ec-store.ec-store__cart-page .ec-cart-item__picture {
+    width: 170px !important;
+}
+
+html#ecwid_html body#ecwid_body .ec-size.ec-size--m .ec-store.ec-store__subscription-page .ec-cart__body, html#ecwid_html body#ecwid_body .ec-size.ec-size--m .ec-store.ec-store__cart-page .ec-cart__body, html#ecwid_html body#ecwid_body .ec-size.ec-size--m .ec-store.ec-store__account-page .ec-cart__body {
+    width: 38.3333333333%;
+}
+
+html#ecwid_html body#ecwid_body .ec-size.ec-size--s .ec-store .ec-cart__shopping {
+    display: none !important;
+
+}
+
+html#ecwid_html body#ecwid_body .ec-size.ec-size--s .ec-store .ec-cart__body .ec-page-title {
+    display: none !important;
+}
+
+html#ecwid_html body#ecwid_body .ec-minicart.ec-minicart--pill {
+    display: none !important;
+
+}
+
+
+html#ecwid_html body#ecwid_body .ec-size.ec-size--s .ec-store .ec-cart__body {
+        padding-left: -355px;
+        margin-left: -45% !important;
+        margin-top: 25% !important;
+    }
+    
+    
+    
+    html#ecwid_html body#ecwid_body div.ecwid-ProductBrowserPopup {
+        z-index: 900;
+        border: 0;
+        left: 0 !important;
+        right: 0 !important;
+        padding: 0;
+        max-width: 100%;
+        box-sizing: border-box;
+        background: transparent;
+        text-align: right !important;
+        margin: 0;
+        clip: auto !important;
+    }
+    
+    
+    html#ecwid_html body#ecwid_body div.ecwid-overlay {
+        background-color: transparent !important;
+        opacity: 0.6;
+        filter: alpha(opacity=60);
+    }
