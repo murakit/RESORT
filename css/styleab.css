@@ -164,7 +164,7 @@ a:hover {
     .brand-container {
         position: relative;
         left: 0;
-        transform: none;
+        transform: translateX(-50%);
     }
     
 }
@@ -180,7 +180,7 @@ a:hover {
 
 @media (max-width: 768px) {
     .responsive-image {
-        width: 120%; /* or any other percentage that looks good on mobile */
+        width: 170%; /* or any other percentage that looks good on mobile */
     }   
 }
 

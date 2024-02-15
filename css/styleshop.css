@@ -78,7 +78,7 @@ a:hover {
     .brand-container {
         position: relative;
         left: 0;
-        transform: none;
+        transform: translateX(-50%);
     }
 }
 
