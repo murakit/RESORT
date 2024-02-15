@@ -97,6 +97,21 @@ html#ecwid_html body#ecwid_body .ec-minicart {
    
 }
 
+html#ecwid_html body#ecwid_body div.ecwid-ProductBrowserPopup>div {
+    width: 80% !important;
+    padding: 5px;
+    box-sizing: border-box;
+    border: 1px solid black !important;
+    border-radius: 0px !important;
+    position: relative;
+    margin: 0 auto;
+    background-image: url(bag.png) !important;
+    background-repeat: no-repeat !important;
+    display: inline-block;
+    background-position: bottom 50px left 100px !important;
+}
+
+
 
 html#ecwid_html body#ecwid_body .ec-minicart {
     display:none;

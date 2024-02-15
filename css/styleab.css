@@ -110,11 +110,12 @@ a:hover {
 }
 
 .responsive-image {
-    width: 30%;
-    max-width: 100%;
+
+    max-width: 160%;
     height: auto;
     display: block;
     margin: auto; /* this will center the image */
+    transform: translateX(-12%);
 }
 
 .fixed-footer {
@@ -140,6 +141,8 @@ a:hover {
     margin-right: 0px;
 }
 
+
+
 @media (max-width: 300px) {
     .responsive-text {
         font-size: 12px;  /* Set a minimum size for very small screens */
@@ -147,6 +150,8 @@ a:hover {
     .responsive-text02 {
         font-size: 12px;  /* Set a minimum size for very small screens */
     }
+
+    
 
 }
 
@@ -180,10 +185,14 @@ a:hover {
     }
 }
 
-@media (max-width: 768px) {
+@media (min-width: 768px) {
     .responsive-image {
-        width: 170%; /* or any other percentage that looks good on mobile */
-    }   
+        max-width: 200%;
+        height: auto;
+        display: block;
+        margin: auto; /* this will center the image */
+        transform: translateX(0%);
+    }
 }
 
 @media (min-width: 600px) {
@@ -246,6 +255,19 @@ html#ecwid_html body#ecwid_body div.ecwid-ProductBrowserPopup>div {
     margin-right:5%;
 }
 
+html#ecwid_html body#ecwid_body div.ecwid-ProductBrowserPopup>div {
+    width: 80%;
+    padding: 5px;
+    box-sizing: border-box;
+    border: 1px solid black !important;
+    border-radius: 0px !important;
+    position: relative;
+    margin: 0 auto;
+    background-image: url(bag.png) !important;
+    background-repeat: no-repeat !important;
+    display: inline-block;
+    background-position: bottom 50px left 100px !important;
+}
 html#ecwid_html body#ecwid_body .ec-size.ec-size--s .ec-store .ec-cart-next {
     display: none !important;
 }
