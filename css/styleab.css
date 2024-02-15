@@ -180,7 +180,7 @@ a:hover {
 
 @media (max-width: 768px) {
     .responsive-image {
-        width: 80%; /* or any other percentage that looks good on mobile */
+        width: 120%; /* or any other percentage that looks good on mobile */
     }   
 }
 
@@ -190,9 +190,6 @@ a:hover {
         margin-left: -20px;
     }
 }
-
-
-
 
 
 
