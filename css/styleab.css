@@ -65,7 +65,6 @@ a:hover {
 .navbar-toggler {
     margin: 0;  /* Remove margin to ensure the toggler doesn't push the navbar boundaries. */
     text-decoration: none;
-
 }
 
 .bg-light {
@@ -111,9 +110,11 @@ a:hover {
 }
 
 .responsive-image {
-    width: 30%;     /* This ensures the image takes the full width of its container */
-    max-width: 100%; /* This ensures the image won't exceed the container's width */
-    height: auto;    /* This keeps the aspect ratio of the image intact */
+    width: 30%;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: auto; /* this will center the image */
 }
 
 .fixed-footer {
@@ -143,11 +144,18 @@ a:hover {
     .responsive-text {
         font-size: 12px;  /* Set a minimum size for very small screens */
     }
+    .responsive-text02 {
+        font-size: 12px;  /* Set a minimum size for very small screens */
+    }
+
 }
 
 @media (min-width: 1200px) {
     .responsive-text {
         font-size: 48px;  /* Set a fixed size for wider screens */
+    }
+    .responsive-text02 {
+        font-size: 22px;  /* Set a minimum size for very small screens */
     }
 }
 
@@ -158,6 +166,7 @@ a:hover {
         left: 0;
         transform: none;
     }
+    
 }
 
 @media (max-width: 100px) {  /* Adjusting for the default Bootstrap navbar breakpoint */
@@ -168,6 +177,24 @@ a:hover {
         z-index: 2;   /* To ensure the toggler remains above other navbar elements */
     }
 }
+
+@media (max-width: 768px) {
+    .responsive-image {
+        width: 80%; /* or any other percentage that looks good on mobile */
+    }   
+}
+
+@media (min-width: 800px) {
+    .footer-left {
+        float: left;
+        margin-left: -20px;
+    }
+}
+
+
+
+
+
 
 
 html#ecwid_html body#ecwid_body .ec-minicart {
