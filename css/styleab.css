@@ -305,6 +305,7 @@ div.ecwid-popup-content {
 }
 .ec-minicart--animation-default.ec-minicart--animated .ec-minicart__counter::after {
     animation: none;
+    display: flex;
     background-color: transparent !important;
 
 }
