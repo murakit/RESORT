@@ -303,25 +303,6 @@ div.ecwid-popup-content:before {
 div.ecwid-popup-content {
     padding-top: 10px;
 }
-.ec-minicart--animation-default.ec-minicart--animated .ec-minicart__counter::after {
-    animation: none;
-    display: flex;
-    background-color: transparent !important;
-
-}
-
- .ec-minicart--animation-default.ec-minicart--animated .ec-minicart__counter {
-    display: flex;
-    background-color: transparent !important;
-}
-
-.ec-minicart__icon svg {
-    display: none !important;
-}
-
-.ec-minicart__icon:after {
-    content: 'Bag'
-}
 
 
 @media screen and (min-width: 768px) {.popupContent {
