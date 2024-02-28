@@ -92,25 +92,11 @@ a:hover {
 }
 
 
+
 html#ecwid_html body#ecwid_body .ec-minicart {
     display:none;
    
 }
-
-html#ecwid_html body#ecwid_body div.ecwid-ProductBrowserPopup>div {
-    width: 80% !important;
-    padding: 5px;
-    box-sizing: border-box;
-    border: 1px solid black !important;
-    border-radius: 0px !important;
-    position: relative;
-    margin: 0 auto;
-    background-image: url(bag.png) !important;
-    background-repeat: no-repeat !important;
-    display: inline-block;
-    background-position: bottom 50px left 100px !important;
-}
-
 
 
 html#ecwid_html body#ecwid_body .ec-minicart {
@@ -132,26 +118,18 @@ html#ecwid_html body#ecwid_body .ec-minicart__icon svg {
     display: none ;
     background-color: transparent !important;
     width: 50%;
-    height: 50%;
+    height: 50%;    
     box-shadow: none;
     content:"Bag";
 }
 
-html#ecwid_html body#ecwid_body div.ecwid-ProductBrowserPopup>div {
-    padding: 5px;
-    box-sizing: border-box;
-    border: 1px solid black !important;
-    border-radius: 0px !important;
-    position: relative;
-    margin: 0 auto;
-    background-image: url("bag.png") !important;
-    background-repeat: no-repeat !important;
-    display: inline-block;
-    background-position: bottom 50px left 100px !important;
-}
-
 #navbarNav {
     margin-right:5%;
+}
+
+html#ecwid_html body#ecwid_body div.ecwid-ProductBrowserPopup>div {
+    border: 1px solid black !important;
+    border-radius: 0px !important;
 }
 
 html#ecwid_html body#ecwid_body .ec-size.ec-size--s .ec-store .ec-cart-next {
@@ -159,7 +137,7 @@ html#ecwid_html body#ecwid_body .ec-size.ec-size--s .ec-store .ec-cart-next {
 }
 
 html#ecwid_html body#ecwid_body .ec-size.ec-size--s .ec-store.ec-store__cart-page .ec-cart-item__picture {
-    width: 115px;
+    width: 170px !important;
 }
 
 html#ecwid_html body#ecwid_body .ec-size.ec-size--m .ec-store.ec-store__subscription-page .ec-cart__body, html#ecwid_html body#ecwid_body .ec-size.ec-size--m .ec-store.ec-store__cart-page .ec-cart__body, html#ecwid_html body#ecwid_body .ec-size.ec-size--m .ec-store.ec-store__account-page .ec-cart__body {
@@ -181,8 +159,75 @@ html#ecwid_html body#ecwid_body .ec-minicart.ec-minicart--pill {
 }
 
     
+html#ecwid_html body#ecwid_body div.ecwid-ProductBrowserPopup {
+        z-index: 900;
+        border: 0;
+        left: 0 !important;
+        right: 0 !important;
+        padding: 0;
+        max-width: 100%;
+        box-sizing: border-box;
+        background: transparent;
+        text-align: right !important;
+        margin: 0;
+        clip: auto !important;
+    }
+    
+    
 html#ecwid_html body#ecwid_body div.ecwid-overlay {
-    background-color: transparent !important;
-    opacity: 0.6;
-    filter: alpha(opacity=60);
+        background-color: transparent !important;
+        opacity: 0.6;
+        filter: alpha(opacity=60);
+    }
+
+
+div.ecwid-popup-content:before {
+    content: '';
+    background: url('https://i.ibb.co/mNSgNqs/Screen-Shot-2024-02-16-at-12-18-08.png') no-repeat;
+    background-size: contain;
+    background-position: center;
+    height: 80px;
+    display: block;
 }
+
+div.ecwid-popup-content {
+    padding-top: 10px;
+}
+
+.ec-minicart--animation-default.ec-minicart--animated .ec-minicart__counter::after {
+    animation: none;
+    display: none;
+    background-color: transparent !important;
+
+}
+
+ .ec-minicart--animation-default.ec-minicart--animated .ec-minicart__counter {
+    display: none;
+    background-color: transparent !important;
+}
+
+.ec-minicart__icon svg {
+    display: none !important;
+}
+
+.ec-minicart__icon:after {
+    content: 'Bag'
+}
+
+
+
+@media screen and (min-width: 768px) {.popupContent {
+    width: 500px !important;
+}
+.ecwid-popup-content {
+    display: block;
+    width: 50%;
+}
+.ec-cart--empty .ec-cart__message, .ec-cart--empty .ec-cart__button { width: 40% !important;
+}  
+.ec-store .ec-cart {
+    display: block !important;
+}
+.ec-cart__sidebar, .ec-cart__body {
+    width: 50% !important;
+}}
