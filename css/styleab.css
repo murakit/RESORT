@@ -304,6 +304,32 @@ div.ecwid-popup-content {
     padding-top: 10px;
 }
 
+.ec-minicart--animation-default.ec-minicart--animated .ec-minicart__counter::after {
+    animation: none;
+    display: none;
+    color: white !important;
+    background-color: white !important;
+
+}
+
+ .ec-minicart--animation-default.ec-minicart--animated .ec-minicart__counter {
+    display: flex;
+    color: black !important;
+    background-color: transparent !important;
+}
+
+.ec-minicart__icon svg {
+    display: none !important;
+}
+
+.ec-minicart__icon:after {
+    content: 'Bag'
+}
+
+html#ecwid_html body#ecwid_body div.ecwid-productBrowser {
+    padding: 0 10px 20px;
+    background-color: transparent  !important;
+}
 
 @media screen and (min-width: 768px) {.popupContent {
     width: 500px !important;
