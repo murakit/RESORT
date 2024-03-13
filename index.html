@@ -14,13 +14,19 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="brand-container mx-auto">
-                <a class="navbar-brand" href="index.html">Resort</a>
-            </div>
+              <a class="navbar-brand" href="index.html">
+                  <div class="image-swap">
+                      <img class="resort original-logo" src="img/RESORT_LOGO.png" alt="Resort Logo">
+                      <img class="resort hover-logo" src="img/RESORT_ISO.png" alt="Resort Logo Hover">
+                  </div>
+              </a>
+          </div>
+          
 
         <div class="collapse navbar-collapse" id="navbarNav">
               <ul class="navbar-nav ml-auto">
                 <li class="nav-item active">
-                  <a class="nav-link" href="new.html">NEW</a>
+                  <a class="nav-link" href="index.html">NEW</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="about.html">About</a>
@@ -42,10 +48,11 @@
           src="https://app.ecwid.com/script.js?99714048&data_platform=singleproduct_v2"
           charset="utf-8"></script><script>Ecwid.init();</script>
 
-          <div class="responsive-text">
-            01
-          </div>
-
+                <div class="col-12 col-md-10 col-lg-7 mx-auto">
+                    <img id="bck" src="img/bck02.jpg" class="img-fluid" alt="Responsive image">
+                </div>
+     
+    
 
         <script>
           
@@ -120,7 +127,7 @@
           }
 
           function update_star(i) {
-            if (--starv[i]==25) star[i].style.clip="rect(1px, 4px, 4px, 1px)";
+            if (--starv[i]==25) star[i].style.clip="rect(1px, 4px, 4px, 1px, 4px, 1px)";
             if (starv[i]) {
               stary[i]+=1+Math.random()*3;
               if (stary[i]<shigh+sdown) {

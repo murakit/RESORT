@@ -16,6 +16,16 @@ body {
     }
 }
 
+@font-face {
+    font-family: myFirstFont;
+    src: url('Shree-Devanagari-714.ttf');
+}
+
+* {
+    font-family: myFirstFont !important;
+    text-rendering: optimizeLegibility;
+ }
+
 a {
     color: black;
     text-decoration: none; /* This ensures no underline by default */
@@ -92,6 +102,37 @@ a:hover {
 }
 
 
+.image-swap {
+    position: relative;
+    display: inline-block; /* or block, depending on your layout */
+}
+
+.resort {
+    display: block;
+    max-width: 100px; /* or specific size */
+    height: auto;
+    position: absolute;
+    top: -30;
+    left: -50;
+    transition: opacity 0.3s ease;
+}
+
+.hover-logo {
+    opacity: 0;
+}
+
+.image-swap:hover .hover-logo {
+    opacity: 1;
+}
+
+.image-swap:hover .original-logo {
+    opacity: 0;
+}
+
+
+#bck {
+    margin-top: 3%; /* default margin-top for extra-small devices */
+}
 
 html#ecwid_html body#ecwid_body .ec-minicart {
     display:none;

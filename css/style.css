@@ -1,12 +1,22 @@
 body {
-        background-image: url('resort02.png');
+        background-color: white;
         background-size: cover;
         background-position: center center;
         height: 100vh; /* This will make it take the full viewport height */
         animation: fadeIn 1s ease-in-out forwards;
-
+        overflow: hidden !important;
 }
 
+@font-face {
+    font-family: myFirstFont;
+    src: url('Shree-Devanagari-714.ttf');
+}
+
+* {
+    font-family: myFirstFont !important;
+    text-rendering: optimizeLegibility;
+ }
+ 
 @keyframes fadeIn {
     from {
         opacity: 0;
@@ -25,6 +35,7 @@ a {
 .nav-link {
     text-decoration: none !important;
 }
+
 
 a {
     color: black;
@@ -74,6 +85,7 @@ a:hover {
     width: 100%;
     color:white;
 }
+
 @media (max-width: 600px) {
     .brand-container {
         position: relative;
@@ -91,7 +103,63 @@ a:hover {
     }
 }
 
+.image-swap {
+    position: relative;
+    display: inline-block; /* or block, depending on your layout */
+}
 
+.resort {
+    display: block;
+    max-width: 100px; /* or specific size */
+    height: auto;
+    position: absolute;
+    top: -30;
+    left: -50;
+    transition: opacity 0.3s ease;
+}
+
+.hover-logo {
+    opacity: 0;
+}
+
+.image-swap:hover .hover-logo {
+    opacity: 1;
+}
+
+.image-swap:hover .original-logo {
+    opacity: 0;
+}
+
+
+#bck {
+    margin-top: 3%; /* default margin-top for extra-small devices */
+}
+
+/*
+@media (min-width: 576px) { 
+    .resort {
+        max-width: 75px;
+    }
+
+}
+
+@media (min-width: 768px) {
+    .resort {
+        max-width: 75px;
+    }
+    
+}
+
+
+}*/
+
+@media (min-width: 992px) { 
+
+    #bck {
+        width: 130% !important;
+    }
+
+}
 
 html#ecwid_html body#ecwid_body .ec-minicart {
     display:none;

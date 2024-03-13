@@ -7,6 +7,16 @@ body {
 
 }
 
+@font-face {
+    font-family: myFirstFont;
+    src: url('Shree-Devanagari-714.ttf');
+}
+
+* {
+    font-family: myFirstFont !important;
+    text-rendering: optimizeLegibility;
+ }
+
 @keyframes fadeIn {
     from {
         opacity: 0;
@@ -79,7 +89,7 @@ a:hover {
 }
 
 .responsive-text {
-    font-size: 4vw;  /* Adjust this value as needed */
+    font-size: 2vw;  /* Adjust this value as needed */
     text-align: center; 
     padding: 2rem 6rem; 
     width: 100%;
@@ -110,7 +120,6 @@ a:hover {
 }
 
 .responsive-image {
-
     max-width: 160%;
     height: auto;
     display: block;
@@ -141,8 +150,59 @@ a:hover {
     margin-right: 0px;
 }
 
+.image-swap {
+    position: relative;
+    display: inline-block; /* or block, depending on your layout */
+}
 
+.resort {
+    display: block;
+    max-width: 100px; /* or specific size */
+    height: auto;
+    position: absolute;
+    top: -30;
+    left: -50;
+    transition: opacity 0.3s ease;
+}
 
+.hover-logo {
+    opacity: 0;
+}
+
+.image-swap:hover .hover-logo {
+    opacity: 1;
+}
+
+.image-swap:hover .original-logo {
+    opacity: 0;
+}
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+.responsive-text05 {
+    font-size: 2vw;  /* Adjust this value as needed */
+    text-align: center; 
+    padding: 2rem 6rem; 
+    width: 100%;
+}
+
+.responsive-image {
+    width: 20%; /* or any other fixed width */
+    height: auto; /* maintain aspect ratio */
+    object-fit: cover;
+}
+
+.vertical-line {
+    border-left: 1px solid grey; /* Make the line thicker and ensure it's a visible color */
+    height: 50px; /* Example height - adjust as needed */
+    margin-top: 5%;
+  }
+  
+  
 @media (max-width: 300px) {
     .responsive-text {
         font-size: 12px;  /* Set a minimum size for very small screens */
@@ -155,9 +215,10 @@ a:hover {
 
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1000px) {
     .responsive-text {
-        font-size: 48px;  /* Set a fixed size for wider screens */
+        font-size: 1.5vw;  /* Set a fixed size for wider screens */
+        margin-top: 5%;
     }
     .responsive-text02 {
         font-size: 22px;  /* Set a minimum size for very small screens */
@@ -193,6 +254,8 @@ a:hover {
         margin: auto; /* this will center the image */
         transform: translateX(0%);
     }
+
+
 }
 
 @media (min-width: 600px) {
@@ -201,6 +264,25 @@ a:hover {
         margin-left: -20px;
     }
 }
+
+@media (max-width: 767px) {
+    #mobile-img-1, #mobile-img-2 {
+      width: 100%; /* Adjust the width as needed */
+      height: auto;
+    }
+
+    .vertical-line {
+        border-left: 1px solid grey;
+        height: 50px;
+        margin-top: 100px;
+      }
+
+      .responsive-text05 {
+        font-size: 4vw; /* Larger font size for small devices */
+    }
+  }
+  
+  /* Existing styles */
 
 
 html#ecwid_html body#ecwid_body .ec-minicart {
